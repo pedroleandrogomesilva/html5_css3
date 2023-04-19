@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02.07 - Servindo tags para formulários - parte 2</title>
+</head>
+<body>
+
+<main>
+    <form>
+        <fieldset>
+            <legend>Formulário</legend>
+
+            <p>
+                Insira seu nome: <input type="text" required placeholder="Informe seu nome completo" readonly>
+            </p>
+
+            <p>
+                Insira seu cpf: <input type="text" required placeholder="001.002.003-04" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+            </p>
+
+            <p>
+                Insira seu e-mail: <input type="email" required="" disabled>
+            </p>
+
+            <p>
+                Insira sua senha: <input type="password" required="required">
+            </p>
+
+            <p>
+                Informe seu sexo: <br>
+                <input type="radio" name="sexo"> Masculino <br>
+                <input type="radio" name="sexo"> Feminino
+            </p>
+
+            <p>
+                Informe a sua tecnologia preferida: <br>
+                <input type="checkbox" checked>HTML5 <br>
+                <input type="checkbox">CSS3 <br>
+                <input type="checkbox">PHP <br>
+                <input type="checkbox">JQuery <br>
+            </p>
+
+            <p>
+                Selecione um arquivo <input type="file">
+            </p>
+
+            <p>
+                Informe uma URL <input type="url">
+            </p>
+
+            <p>
+                Selecione um curso <br>
+                <select name="" id="">
+                    <optgroup label="Bolas de Vôlei de Quadra">
+                        <option value="">MIKASA V200W</option>
+                        <option value="">MIKASA V390W</option>
+                        <option value="">MIKASA V330W</option>
+                        <option value="">MIKASA V370W</option>
+                    </optgroup>
+
+                    <optgroup label="Bolas de Vôlei de Praia">
+                        <option value="">MIKASA VLS300</option>
+                        <option value="">MIKASA VXT30</option>
+                        <option value="">MIKASA VXL30</option>
+                        <option value="">MIKASA VXSSD</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                Range: <input type="range">
+            </p>
+
+            <p>
+                Color Pick: <input type="color">
+            </p>
+
+            <p>
+                Date: <input type="date">
+            </p>
+
+            <p>
+                Time: <input type="time">
+            </p>
+
+            <p>
+                Datetime <input type="datetime-local">
+            </p>
+
+            <p>
+                Month <input type="month">
+            </p>
+
+            <p>
+                Week <input type="week">
+            </p>
+
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </p>
+        </fieldset>
+    </form>
+</main>
+
+</body>
+</html>
